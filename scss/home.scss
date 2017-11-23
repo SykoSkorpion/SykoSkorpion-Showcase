@@ -1,0 +1,120 @@
+@import "reset.scss";
+@import "variables.scss";
+@import "mixins.scss";
+
+body{
+    background-image: url(../img/dark-triangles.png);
+}
+
+nav{
+    @include main-nav-style;
+    margin: -110px 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+#name{
+    font-family: josefin;
+    font-size: 120px;
+    color: black;
+    margin: 110px 15% 50px;
+    padding: 10px 0;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: black;
+    background-color: $d-orange;
+    opacity: 0.8;
+    transition-duration: 0.5s;
+}
+
+#web{
+    font-family: josefin;
+    font-size: 50px;
+    color: black;
+    width: 500px;
+    margin: 60px 70px;
+    padding: 10px 0 5px;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: black;
+    background-color: $d-orange;
+    opacity: 0.8;
+    transition-duration: 0.5s;
+}
+
+#graphic{
+    font-family: josefin;
+    font-size: 50px;
+    color: black;
+    width: 500px;
+    margin: 60px 70px;
+    padding: 10px 0 5px;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: black;
+    background-color: $d-orange;
+    opacity: 0.8;
+    transition-duration: 0.5s;
+}
+
+#game{
+    font-family: josefin;
+    font-size: 50px;
+    color: black;
+    width: 500px;
+    margin: 60px 70px;
+    padding: 10px 0 5px;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: black;
+    background-color: $d-orange;
+    opacity: 0.8;
+    transition-duration: 0.5s;
+}
+
+/* Title hover states */
+
+#web:hover{
+    color: $d-orange;
+    background-color: black;
+    border-color: $d-orange;
+    transition-duration: 0.2s;
+}
+
+#graphic:hover{
+    color: $d-orange;
+    background-color: black;
+    border-color: $d-orange;
+    transition-duration: 0.2s;
+}
+
+#game:hover{
+    color: $d-orange;
+    background-color: black;
+    border-color: $d-orange;
+    transition-duration: 0.2s;
+}
+
+/* End of title hover states */
+
+#portrait{
+    background-image: url(../img/me-mask-circ.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    float: right;
+    margin: -420px 170px 10px;
+}
+

@@ -1,0 +1,63 @@
+// Mixins
+
+body{
+    font-family: sans-serif;
+    font-size: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+@font-face{
+    font-family: josefin;
+    src: url('../fonts/josefin/JosefinSans-Bold.ttf');
+}
+
+@font-face{
+	font-family: josefinlight;
+	src: url('../fonts/josefin/JosefinSans-Light.ttf');
+}
+
+@mixin main-nav-style{
+    position: fixed;
+	width: 100%;
+	height: 60px;
+	background-color: $d-orange;
+    box-shadow: 1px 1px 100px 1px;
+    opacity: 0.8;
+    border-style: solid;
+    border-width: 3px 0;
+    border-color: black;
+    z-index: 1;
+	
+	li{
+		list-style: none;
+		display: inline-block;
+		margin: 0 -2.7px;
+		padding: 18px 0;
+	}
+	
+	li a{
+        font-family: josefin;
+        font-weight: bold;
+        font-size: 33.5px;
+		color: black;
+		text-decoration: none;
+		margin: 10px 0px;
+		padding: 15px 20px 6px;
+		border-style: solid;
+		border-radius: 2px;
+		border-width: 2px;
+        border-color: $d-orange;
+		transition-duration: 0.8s;
+	}
+	
+	li a:hover{
+        color: $d-orange;
+        border-color: black;
+		background-color: black;
+		transition-duration: 0.2s;
+	}
+}
+
+

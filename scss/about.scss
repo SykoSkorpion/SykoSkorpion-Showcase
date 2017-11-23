@@ -1,0 +1,111 @@
+@import "reset.scss";
+@import "variables.scss";
+@import "mixins.scss";
+
+body{
+    background-image: url(../img/dark-triangles.png);
+}
+
+nav{
+    @include main-nav-style;
+    margin: -110px 0;
+}
+
+#title{
+    font-family: josefin;
+    font-size: 90px;
+    color: black;
+    margin: 110px 20% 30px;
+    padding: 10px 0;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: black;
+    background-color: $d-orange;
+    opacity: 0.8;
+    transition-duration: 0.5s;
+}
+
+#about{
+    font-family: josefinlight;
+    width: 40%;
+    margin: 0 20px 0 80px;
+    background-color: $d-orange;
+    color: black;
+    padding: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 4px;
+    opacity: 0.8;
+    font-size: 22px;
+    transition-duration: 0.5s;
+}
+
+#about-2{
+    font-family: josefinlight;
+    width: 40%;
+    margin: 0 20px 0 80px;
+    background-color: $d-orange;
+    color: black;
+    padding: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 4px;
+    opacity: 0.8;
+    font-size: 22px;
+    transition-duration: 0.5s;
+}
+
+#about-3{
+    font-family: josefinlight;
+    width: 40%;
+    margin: 0 20px 20px 80px;
+    background-color: $d-orange;
+    color: black;
+    padding: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 4px;
+    opacity: 0.8;
+    font-size: 22px;
+    transition-duration: 0.5s;
+}
+
+/* Text hover states */
+
+#about:hover{
+    color: $d-orange;
+    background-color: black;
+    border-color: $d-orange;
+    transition-duration: 0.2s;
+}
+
+#about-2:hover{
+    color: $d-orange;
+    background-color: black;
+    border-color: $d-orange;
+    transition-duration: 0.2s;
+}
+
+#about-3:hover{
+    color: $d-orange;
+    background-color: black;
+    border-color: $d-orange;
+    transition-duration: 0.2s;
+}
+
+#portrait{
+    background-image: url(../img/me-mask-circ-blue.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    float: right;
+    margin: -400px 170px 10px;
+}
+
