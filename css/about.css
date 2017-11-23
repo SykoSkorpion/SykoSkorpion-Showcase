@@ -61,7 +61,7 @@ body {
   src: url("../fonts/josefin/JosefinSans-Light.ttf"); }
 
 body {
-  background-image: url(../img/dark-triangles.png); }
+  background-image: url(../img/blue-background.gif); }
 
 nav {
   position: fixed;
@@ -133,7 +133,7 @@ nav {
   border-color: black;
   border-radius: 4px;
   opacity: 0.8;
-  font-size: 22px;
+  font-size: 35px;
   -webkit-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s; }
@@ -150,7 +150,7 @@ nav {
   border-color: black;
   border-radius: 4px;
   opacity: 0.8;
-  font-size: 22px;
+  font-size: 35px;
   -webkit-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s; }
@@ -167,7 +167,7 @@ nav {
   border-color: black;
   border-radius: 4px;
   opacity: 0.8;
-  font-size: 22px;
+  font-size: 35px;
   -webkit-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s; }
@@ -201,8 +201,8 @@ nav {
   background-image: url(../img/me-mask-circ-blue.png);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 400px;
-  height: 400px;
+  width: 550px;
+  height: 550px;
   margin: 10px;
   float: right;
-  margin: -400px 170px 10px; }
+  margin: -570px 170px 10px; }

@@ -3,7 +3,7 @@
 @import "mixins.scss";
 
 body{
-    background-image: url(../img/dark-triangles.png);
+    background-image: url(../img/blue-background.gif);
     background-size: contain;
     background-repeat: repeat;
 }
@@ -23,6 +23,7 @@ div:hover{
     filter: grayscale(0%);
     opacity: 1.0;
     transition-duration: 0.3s;
+	border-color: $d-orange;
 }
 
 h2{
@@ -54,7 +55,7 @@ h2:hover{
     background-size: contain;
     margin: 30px 36.25%;
     width: 28.5%;
-    height: 683px;
+    height: 967px;
     border-style: solid;
     border-width: 5px;
     border-color: black;
@@ -68,7 +69,7 @@ h2:hover{
     background-size: contain;
     margin: 30px 31.5%;
     width: 37%;
-    height: 683px;
+    height: 967px;
     border-style: solid;
     border-width: 5px;
     border-color: black;
@@ -82,7 +83,7 @@ h2:hover{
     background-size: contain;
     margin: 30px 35.25%;
     width: 28.5%;
-    height: 683px;
+    height: 967px;
     border-style: solid;
     border-width: 5px;
     border-color: black;
@@ -97,7 +98,7 @@ h2:hover{
     background-size: contain;
     margin: 30px 31.5%;
     width: 37%;
-    height: 683px;
+    height: 967px;
     border-style: solid;
     border-width: 5px;
     border-color: black;
@@ -111,7 +112,7 @@ h2:hover{
     background-size: contain;
     margin: 30px 31%;
     width: 38%;
-    height: 683px;
+    height: 967px;
     border-style: solid;
     border-width: 5px;
     border-color: black;
@@ -124,9 +125,9 @@ h2:hover{
     background-color: $d-orange;
     background-repeat: no-repeat;
     background-size: contain;
-    margin: 30px 17.5%;
-    width: 65%;
-    height: 493px;
+    margin: 30px 5%;
+    width: 90%;
+    height: 967px;
     border-style: solid;
     border-width: 5px;
     border-color: black;
@@ -141,7 +142,7 @@ h2:hover{
     background-size: contain;
     margin: 30px 31.5%;
     width: 37%;
-    height: 683px;
+    height: 967px;
     border-style: solid;
     border-width: 5px;
     border-color: black;
@@ -153,9 +154,9 @@ h2:hover{
     background-color: $d-orange;
     background-repeat: no-repeat;
     background-size: contain;
-    margin: 30px 36.25%;
-    width: 28.6%;
-    height: 641px;
+    margin: 30px 35.75%;
+    width: 30.5%;
+    height: 967px;
     border-style: solid;
     border-width: 5px;
     border-color: black;
@@ -169,7 +170,7 @@ h2:hover{
     background-size: contain;
     margin: 30px 5%;
     width: 90%;
-    height: 683px;
+    height: 967px;
     border-style: solid;
     border-width: 5px;
     border-color: black;
@@ -183,7 +184,7 @@ h2:hover{
     background-size: contain;
     margin: 30px 31.5%;
     width: 37%;
-    height: 683px;
+    height: 967px;
     border-style: solid;
     border-width: 5px;
     border-color: black;
@@ -195,9 +196,9 @@ h2:hover{
     background-color: $d-orange;
     background-repeat: no-repeat;
     background-size: contain;
-    margin: 30px 27.25%;
-    width: 47.5%;
-    height: 465px;
+    margin: 30px 15%;
+    width: 70%;
+    height: 967px;
     border-style: solid;
     border-width: 5px;
     border-color: black;
@@ -211,7 +212,7 @@ h2:hover{
     background-size: contain;
     margin: 30px 5%;
     width: 90%;
-    height: 683px;
+    height: 967px;
     border-style: solid;
     border-width: 5px;
     border-color: black;

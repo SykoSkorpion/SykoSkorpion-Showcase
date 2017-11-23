@@ -3,7 +3,7 @@
 @import "mixins.scss";
 
 body{
-    background-image: url(../img/dark-triangles.png);
+    background-image: url(../img/blue-background.gif);
 }
 
 nav{
@@ -33,10 +33,10 @@ a{
 
 #web{
     font-family: josefin;
-    font-size: 50px;
+    font-size: 80px;
     color: black;
-    width: 500px;
-    margin: 60px 70px;
+    width: 800px;
+    margin: 100px 70px;
     padding: 10px 0 5px;
     text-align: center;
     border-style: solid;
@@ -50,10 +50,10 @@ a{
 
 #graphic{
     font-family: josefin;
-    font-size: 50px;
+    font-size: 80px;
     color: black;
-    width: 500px;
-    margin: 60px 70px;
+    width: 800px;
+    margin: 100px 70px;
     padding: 10px 0 5px;
     text-align: center;
     border-style: solid;
@@ -67,10 +67,10 @@ a{
 
 #game{
     font-family: josefin;
-    font-size: 50px;
+    font-size: 80px;
     color: black;
-    width: 500px;
-    margin: 60px 70px;
+    width: 800px;
+    margin: 100px 70px;
     padding: 10px 0 5px;
     text-align: center;
     border-style: solid;
@@ -111,10 +111,10 @@ a{
     background-image: url(../img/me-mask-circ.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 400px;
-    height: 400px;
+    width: 550px;
+    height: 550px;
     margin: 10px;
     float: right;
-    margin: -420px 170px 10px;
+    margin: -630px 170px 10px;
 }
 
