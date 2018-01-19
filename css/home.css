@@ -48,168 +48,1476 @@ table {
 body {
   font-family: sans-serif;
   font-size: 20px;
+  background-image: url(../img/dark-triangles.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%; }
 
 @font-face {
-  font-family: josefin;
-  src: url("../fonts/josefin/JosefinSans-Bold.ttf"); }
+  font-family: broken-glass;
+  src: url("../fonts/broken-glass/BrokenGlass.otf"); }
+
+@font-face {
+  font-family: breakaway;
+  src: url("../fonts/breakaway/breakaway.ttf"); }
 
 @font-face {
   font-family: josefinlight;
   src: url("../fonts/josefin/JosefinSans-Light.ttf"); }
 
-body {
-  background-image: url(../img/blue-background.gif); }
-
-nav {
-  position: fixed;
-  width: 100%;
-  height: 60px;
-  background-color: #ff8000;
-  -webkit-box-shadow: 1px 1px 100px 1px;
-  box-shadow: 1px 1px 100px 1px;
-  opacity: 0.8;
-  border-style: solid;
-  border-width: 3px 0;
-  border-color: black;
-  z-index: 1;
-  margin: -110px 0; }
-  nav li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 -2.7px;
-    padding: 18px 0; }
-  nav li a {
-    font-family: josefin;
-    font-weight: bold;
-    font-size: 33.5px;
-    color: black;
-    text-decoration: none;
-    margin: 10px 0px;
-    padding: 15px 20px 6px;
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  body {
+    background-image: url(../img/dark-triangles.png);
+    background-repeat: repeat; }
+  nav {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    padding: 2px 0 2px;
+    background-color: #ff8000;
+    -webkit-box-shadow: 1px 1px 100px 1px;
+    box-shadow: 1px 1px 100px 1px;
+    opacity: 0.8;
     border-style: solid;
-    border-radius: 2px;
-    border-width: 2px;
-    border-color: #ff8000;
-    -webkit-transition-duration: 0.8s;
-    -o-transition-duration: 0.8s;
-    transition-duration: 0.8s; }
-  nav li a:hover {
-    color: #ff8000;
+    border-width: 3px 0;
     border-color: black;
+    z-index: 1;
+    margin: -60px 0; }
+    nav li {
+      list-style: none;
+      display: inline-block;
+      margin: 0 -2.7px;
+      padding: 18px 0; }
+    nav li a {
+      font-family: broken-glass;
+      font-weight: bold;
+      font-size: 33.5px;
+      color: black;
+      text-decoration: none;
+      margin: 10px 0px;
+      padding: 15px 20px 6px;
+      border-style: solid;
+      border-radius: 2px;
+      border-width: 2px;
+      border-color: #ff8000;
+      -webkit-transition-duration: 0.8s;
+      -o-transition-duration: 0.8s;
+      transition-duration: 0.8s; }
+    nav li a:hover {
+      color: #ff8000;
+      border-color: black;
+      background-color: black;
+      -webkit-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      transition-duration: 0.2s; }
+  nav:hover {
+    opacity: 1; }
+  a {
+    text-decoration: none; }
+  #home-back {
+    background-image: url(../img/blue-poly-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 720px; }
+  #name {
+    font-family: breakaway;
+    font-size: 90px;
+    color: black;
+    margin: 60px 0 160px;
+    width: 100%;
+    padding: 20px 0 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: black;
+    background-image: url(../img/orange-poly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+  #web {
+    font-family: broken-glass;
+    font-size: 50px;
+    color: black;
+    width: 500px;
+    margin: 60px 40px 60px;
+    padding: 10px 0 5px;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: black;
+    background-image: url(../img/orange-poly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+  #graphic {
+    font-family: broken-glass;
+    font-size: 50px;
+    color: black;
+    width: 500px;
+    margin: 90px 40px 200px;
+    padding: 10px 0 5px;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: black;
+    background-image: url(../img/orange-poly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+  /* Title hover states */
+  #web:hover {
+    background-image: url(../img/orange-poly-dark.jpg);
+    color: #ff8000;
     background-color: black;
+    border-color: #ff8000;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    opacity: 1; }
+  #graphic:hover {
+    background-image: url(../img/orange-poly-dark.jpg);
+    color: #ff8000;
+    background-color: black;
+    border-color: #ff8000;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    opacity: 1; }
+  /* End of title hover states */
+  #portrait-1 {
+    background-image: url(../img/me-mask-circ.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 400px;
+    height: 400px;
+    float: right;
+    margin: -510px 35px 10px; }
+  /* End of HOME section */
+  /* ABOUT section */
+  #about-back {
+    background-image: url(../img/blue-poly-2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 420px;
+    padding: 100px 0; }
+  #about {
+    font-family: breakaway;
+    font-size: 90px;
+    color: black;
+    margin: -5px 0 0;
+    width: 100%;
+    padding: 20px 0 0;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: black;
+    background-image: url(../img/orange-poly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+  #about-1 {
+    font-family: josefinlight;
+    width: 40%;
+    margin: 0 20px 0 80px;
+    background-image: url(../img/orange-poly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    padding: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 4px;
+    opacity: 0.8;
+    font-size: 22px;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+  #about-2 {
+    font-family: josefinlight;
+    width: 40%;
+    margin: 0 20px 0 80px;
+    background-image: url(../img/orange-poly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    padding: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 4px;
+    opacity: 0.8;
+    font-size: 22px;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+  #about-3 {
+    font-family: josefinlight;
+    width: 40%;
+    margin: 0 20px 20px 80px;
+    background-image: url(../img/orange-poly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    padding: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 4px;
+    opacity: 0.8;
+    font-size: 22px;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+  /* Text hover states */
+  #about-1:hover {
+    background-image: url(../img/orange-poly-dark.jpg);
+    color: #ff8000;
+    background-color: black;
+    border-color: #ff8000;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    opacity: 1; }
+  #about-2:hover {
+    background-image: url(../img/orange-poly-dark.jpg);
+    color: #ff8000;
+    background-color: black;
+    border-color: #ff8000;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    opacity: 1; }
+  #about-3:hover {
+    background-image: url(../img/orange-poly-dark.jpg);
+    color: #ff8000;
+    background-color: black;
+    border-color: #ff8000;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    opacity: 1; }
+  #portrait-2 {
+    background-image: url(../img/me-mask-circ-blue.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    float: right;
+    margin: -430px 35px 10px; }
+  /* End of ABOUT section */
+  /* CONTACT section */
+  #contact {
+    font-family: breakaway;
+    font-size: 90px;
+    color: black;
+    margin: 0 0;
+    width: 100%;
+    padding: 20px 0 0;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: black;
+    background-image: url(../img/orange-poly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+  #contact-back {
+    background-image: url(../img/blue-poly-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    padding: 10px 0; }
+  #info-wrapper {
+    color: black;
+    background-image: url(../img/orange-poly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 3px;
+    margin: 60px 10% 20px;
+    width: 80%;
+    height: 560px;
+    float: left;
+    opacity: 0.8; }
+    #info-wrapper #contact-info {
+      text-align: center;
+      border-style: solid;
+      border-width: 3px;
+      border-radius: 3px;
+      width: 300px;
+      font-family: broken-glass;
+      font-size: 50px;
+      margin: 10px 35%;
+      padding: 15px 10px 5px;
+      -webkit-transition-duration: 0.5s;
+      -o-transition-duration: 0.5s;
+      transition-duration: 0.5s; }
+    #info-wrapper h3 {
+      border-style: solid;
+      border-width: 3px 0 3px 0;
+      border-radius: 3px;
+      font-family: broken-glass;
+      font-size: 40px;
+      margin: 10px;
+      padding: 10px 10px 5px;
+      -webkit-transition-duration: 0.5s;
+      -o-transition-duration: 0.5s;
+      transition-duration: 0.5s; }
+    #info-wrapper p {
+      font-family: josefinlight;
+      font-size: 30px;
+      margin: 20px 0;
+      text-align: center;
+      -webkit-transition-duration: 0.5s;
+      -o-transition-duration: 0.5s;
+      transition-duration: 0.5s; }
+  #info-wrapper:hover {
+    opacity: 1; }
+    #info-wrapper:hover h2 {
+      color: #ff8000;
+      background-color: black;
+      border-color: black;
+      -webkit-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s; }
+    #info-wrapper:hover h3 {
+      color: #ff8000;
+      background-color: black;
+      border-color: black;
+      -webkit-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s; }
+  /* End of CONTACT section */
+  /* WORK section */
+  #work {
+    font-family: breakaway;
+    font-size: 90px;
+    color: black;
+    margin: 0;
+    width: 100%;
+    height: 100px;
+    padding: 20px 0 0;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: black;
+    background-image: url(../img/orange-poly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+  #work-back {
+    background-image: url(../img/blue-poly-2.jpeg);
+    background-repeat: repeat;
+    padding: 10px 10%; }
+  #bear, #gun-girl, #eye, #blue-me, #bomb, #morty, #serpent, #cyborg, #logo {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.75;
+    -webkit-transition-duration: 0.7s;
+    -o-transition-duration: 0.7s;
+    transition-duration: 0.7s; }
+  #bear {
+    background-image: url(../img/bear.png);
+    background-color: #ff8000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 30px 5px 2.5px;
+    width: 300px;
+    height: 534px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 3px; }
+  #gun-girl {
+    background-image: url(../img/gun-girl.jpg);
+    background-color: #ff8000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: -546px 315px;
+    width: 387px;
+    height: 534px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 3px; }
+  #eye {
+    background-image: url(../img/abstract-eye.png);
+    background-color: #ff8000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 3px 0 2.5px 715px;
+    width: 300px;
+    height: 534px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 3px; }
+  #blue-me {
+    background-image: url(../img/blue-me.jpg);
+    background-color: #ff8000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 1px 5px;
+    width: 297px;
+    height: 395px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 3px; }
+  #bomb {
+    background-image: url(../img/bomb.png);
+    background-color: #ff8000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: -405px 315px;
+    width: 700px;
+    height: 395px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 3px; }
+  #morty {
+    background-image: url(../img/evil-rick.png);
+    background-color: #ff8000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 405px 5px 2.5px;
+    width: 1010px;
+    height: 567px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 3px; }
+  #serpent {
+    background-image: url(../img/sea-serpent.jpg);
+    background-color: #ff8000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 2.5px 5px;
+    width: 657px;
+    height: 480px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 3px; }
+  #cyborg {
+    background-image: url(../img/cyborg.jpg);
+    background-color: #ff8000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: -492px 0 5px 670px;
+    width: 347px;
+    height: 480px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 3px; }
+  #logo {
+    background-image: url(../img/sykoskorpion-logo.png);
+    background-color: #ff8000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 5px;
+    width: 1010px;
+    height: 571.5px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 3px; }
+  #bear:hover, #gun-girl:hover, #eye:hover, #blue-me:hover, #bomb:hover, #morty:hover, #serpent:hover, #cyborg:hover, #logo:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    opacity: 1.0;
+    -webkit-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    border-color: #ff8000; }
+  #vid-wrapper iframe {
+    margin: 0 27%; }
+  #showreel, #mot-grap, #snd-des, #film-cuts {
+    background-color: #ff8000;
+    font-size: 25px;
+    font-family: broken-glass;
+    margin: 50px 0 10px;
+    padding: 10px 0;
+    text-align: center; } }
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url(../img/dark-triangles.png);
+    background-repeat: repeat; }
+  nav {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #ff8000;
+    -webkit-box-shadow: 1px 1px 100px 1px;
+    box-shadow: 1px 1px 100px 1px;
+    opacity: 0.8;
+    border-style: solid;
+    border-width: 1.5px 0;
+    border-color: black;
+    z-index: 1;
+    margin: -60px 0; }
+    nav li {
+      list-style: none;
+      display: inline-block;
+      margin: 0 -2.7px;
+      padding: 18px 0; }
+    nav li a {
+      font-family: broken-glass;
+      font-weight: bold;
+      font-size: 30px;
+      color: black;
+      text-decoration: none;
+      margin: 5px 0px;
+      padding: 15px 6px 8px;
+      border-style: solid;
+      border-radius: 2px;
+      border-width: 2px;
+      border-color: #ff8000;
+      -webkit-transition-duration: 0.8s;
+      -o-transition-duration: 0.8s;
+      transition-duration: 0.8s; }
+    nav li a:hover {
+      color: #ff8000;
+      border-color: black;
+      background-color: black;
+      -webkit-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      transition-duration: 0.2s; }
+  nav:hover {
+    opacity: 1; }
+  a {
+    text-decoration: none; }
+  #home-back {
+    background-image: url(../img/blue-poly-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px; }
+  #name {
+    font-family: breakaway;
+    font-size: 40px;
+    color: black;
+    margin: 60px 0 0px;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: black;
+    background-image: url(../img/orange-poly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+  #web {
+    font-family: broken-glass;
+    font-size: 35px;
+    color: black;
+    width: 200px;
+    margin: 30px 30px 30px;
+    padding: 10px 0 5px;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: black;
+    background-image: url(../img/orange-poly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+  #graphic {
+    font-family: broken-glass;
+    font-size: 35px;
+    color: black;
+    width: 200px;
+    margin: 30px 30px 30px;
+    padding: 10px 0 5px;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: black;
+    background-image: url(../img/orange-poly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+  /* Title hover states */
+  #web:hover {
+    color: #ff8000;
+    background-color: black;
+    border-color: #ff8000;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    opacity: 1; }
+  #graphic:hover {
+    color: #ff8000;
+    background-color: black;
+    border-color: #ff8000;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    opacity: 1; }
+  /* End of title hover states */
+  #portrait-1 {
+    background-image: url(../img/me-mask-circ.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 10px 35px 10px; }
+  /* End of HOME section */
+  /* ABOUT section */
+  #about-back {
+    background-image: url(../img/blue-poly-2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    padding: 30px 0; }
+  #about {
+    font-family: breakaway;
+    font-size: 40px;
+    color: black;
+    margin: 0px;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: black;
+    background-image: url(../img/orange-poly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+  #about-1 {
+    font-family: josefinlight;
+    width: 220px;
+    margin: 0 10px 0 10px;
+    background-image: url(../img/orange-poly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    padding: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 4px;
+    opacity: 0.8;
+    font-size: 16px;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+  #about-2 {
+    font-family: josefinlight;
+    width: 220px;
+    margin: 0 10px 0 10px;
+    background-image: url(../img/orange-poly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    padding: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 4px;
+    opacity: 0.8;
+    font-size: 16px;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+  #about-3 {
+    font-family: josefinlight;
+    width: 220px;
+    margin: 0 10px 0 10px;
+    background-image: url(../img/orange-poly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    padding: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 4px;
+    opacity: 0.8;
+    font-size: 16px;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+  /* Text hover states */
+  #about-1:hover {
+    color: #ff8000;
+    background-color: black;
+    border-color: #ff8000;
     -webkit-transition-duration: 0.2s;
     -o-transition-duration: 0.2s;
     transition-duration: 0.2s; }
+  #about-2:hover {
+    color: #ff8000;
+    background-color: black;
+    border-color: #ff8000;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s; }
+  #about-3:hover {
+    color: #ff8000;
+    background-color: black;
+    border-color: #ff8000;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s; }
+  #portrait-2 {
+    background-image: url(../img/me-mask-circ-blue.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    margin: 10px 35px 10px; }
+  /* End of ABOUT section */
+  /* CONTACT section */
+  #contact {
+    font-family: breakaway;
+    font-size: 40px;
+    color: black;
+    margin: 0 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: black;
+    background-image: url(../img/orange-poly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+  #contact-back {
+    background-image: url(../img/blue-poly-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 530px;
+    padding: 10px 0; }
+  #info-wrapper {
+    color: black;
+    background-image: url(../img/orange-poly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 3px;
+    margin: 20px 10px 20px;
+    width: 240px;
+    height: 460px;
+    float: left;
+    opacity: 0.8; }
+    #info-wrapper #contact-info {
+      text-align: center;
+      border-style: solid;
+      border-width: 3px;
+      border-radius: 3px;
+      width: 195px;
+      font-family: broken-glass;
+      font-size: 50px;
+      margin: 10px;
+      padding: 10px 10px 5px;
+      -webkit-transition-duration: 0.5s;
+      -o-transition-duration: 0.5s;
+      transition-duration: 0.5s; }
+    #info-wrapper h3 {
+      border-style: solid;
+      border-width: 3px 0 3px 0;
+      border-radius: 3px;
+      font-family: broken-glass;
+      font-size: 30px;
+      margin: 10px;
+      padding: 10px 10px 5px;
+      -webkit-transition-duration: 0.5s;
+      -o-transition-duration: 0.5s;
+      transition-duration: 0.5s; }
+    #info-wrapper p {
+      font-family: josefinlight;
+      font-size: 23px;
+      margin: 10px 0;
+      text-align: center;
+      -webkit-transition-duration: 0.5s;
+      -o-transition-duration: 0.5s;
+      transition-duration: 0.5s; }
+  #info-wrapper:hover {
+    opacity: 1; }
+    #info-wrapper:hover h2 {
+      color: #ff8000;
+      background-color: black;
+      border-color: black;
+      -webkit-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s; }
+    #info-wrapper:hover h3 {
+      color: #ff8000;
+      background-color: black;
+      border-color: black;
+      -webkit-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s; }
+  /* End of CONTACT section */
+  /* WORK section */
+  #work {
+    font-family: breakaway;
+    font-size: 40px;
+    color: black;
+    margin: 0 0;
+    width: 100%;
+    height: 40px;
+    padding: 10px 0;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: black;
+    background-image: url(../img/orange-poly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+  #work-back {
+    background-image: url(../img/blue-poly-2.jpeg);
+    background-repeat: repeat;
+    padding: 10px 0; }
+  #bear {
+    background-image: url(../img/bear.png);
+    background-color: #ff8000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px 10px;
+    width: 240px;
+    height: 425px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 3px; }
+  #gun-girl {
+    background-image: url(../img/gun-girl.jpg);
+    background-color: #ff8000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px 10px;
+    width: 240px;
+    height: 330px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 3px; }
+  #eye {
+    background-image: url(../img/abstract-eye.png);
+    background-color: #ff8000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px 10px;
+    width: 240px;
+    height: 425px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 3px; }
+  #blue-me {
+    background-image: url(../img/blue-me.jpg);
+    background-color: #ff8000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px 10px;
+    width: 240px;
+    height: 320px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 3px; }
+  #bomb {
+    background-image: url(../img/bomb.png);
+    background-color: #ff8000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px 10px;
+    width: 240px;
+    height: 135px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 3px; }
+  #morty {
+    background-image: url(../img/evil-rick.png);
+    background-color: #ff8000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px 10px;
+    width: 240px;
+    height: 135px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 3px; }
+  #serpent {
+    background-image: url(../img/sea-serpent.jpg);
+    background-color: #ff8000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px 10px;
+    width: 240px;
+    height: 175px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 3px; }
+  #cyborg {
+    background-image: url(../img/cyborg.jpg);
+    background-color: #ff8000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px 10px;
+    width: 240px;
+    height: 330px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 3px; }
+  #logo {
+    background-image: url(../img/sykoskorpion-logo.png);
+    background-color: #ff8000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px 10px;
+    width: 240px;
+    height: 135px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 3px; }
+  #vid-wrapper iframe {
+    width: 96%;
+    margin: 0 2%; }
+  #showreel, #mot-grap, #snd-des, #film-cuts {
+    background-color: #ff8000;
+    font-size: 25px;
+    font-family: broken-glass;
+    margin: 50px 0 10px;
+    padding: 10px 0;
+    text-align: center; } }
 
-a {
-  text-decoration: none; }
-
-#name {
-  font-family: josefin;
-  font-size: 120px;
-  color: black;
-  margin: 110px 15% 50px;
-  padding: 10px 0;
-  text-align: center;
-  border-style: solid;
-  border-width: 3px;
-  border-radius: 5px;
-  border-color: black;
-  background-color: #ff8000;
-  opacity: 0.8;
-  -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s; }
-
-#web {
-  font-family: josefin;
-  font-size: 80px;
-  color: black;
-  width: 800px;
-  margin: 100px 70px;
-  padding: 10px 0 5px;
-  text-align: center;
-  border-style: solid;
-  border-width: 3px;
-  border-radius: 5px;
-  border-color: black;
-  background-color: #ff8000;
-  opacity: 0.8;
-  -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s; }
-
-#graphic {
-  font-family: josefin;
-  font-size: 80px;
-  color: black;
-  width: 800px;
-  margin: 100px 70px;
-  padding: 10px 0 5px;
-  text-align: center;
-  border-style: solid;
-  border-width: 3px;
-  border-radius: 5px;
-  border-color: black;
-  background-color: #ff8000;
-  opacity: 0.8;
-  -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s; }
-
-#game {
-  font-family: josefin;
-  font-size: 80px;
-  color: black;
-  width: 800px;
-  margin: 100px 70px;
-  padding: 10px 0 5px;
-  text-align: center;
-  border-style: solid;
-  border-width: 3px;
-  border-radius: 5px;
-  border-color: black;
-  background-color: #ff8000;
-  opacity: 0.8;
-  -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s; }
-
-/* Title hover states */
-#web:hover {
-  color: #ff8000;
-  background-color: black;
-  border-color: #ff8000;
-  -webkit-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s; }
-
-#graphic:hover {
-  color: #ff8000;
-  background-color: black;
-  border-color: #ff8000;
-  -webkit-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s; }
-
-#game:hover {
-  color: #ff8000;
-  background-color: black;
-  border-color: #ff8000;
-  -webkit-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s; }
-
-/* End of title hover states */
-#portrait {
-  background-image: url(../img/me-mask-circ.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 550px;
-  height: 550px;
-  margin: 10px;
-  float: right;
-  margin: -630px 170px 10px; }
+@media only screen and (min-width: 400px) and (max-width: 1000px) {
+  body {
+    background-image: url(../img/dark-triangles.png);
+    background-repeat: repeat; }
+  nav {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    padding: 2px 33% 2px;
+    background-color: #ff8000;
+    -webkit-box-shadow: 1px 1px 100px 1px;
+    box-shadow: 1px 1px 100px 1px;
+    opacity: 0.8;
+    border-style: solid;
+    border-width: 1.5px 0;
+    border-color: black;
+    z-index: 1;
+    margin: -60px 0; }
+    nav li {
+      list-style: none;
+      display: inline-block;
+      margin: 0 -2.7px;
+      padding: 18px 0; }
+    nav li a {
+      font-family: broken-glass;
+      font-weight: bold;
+      font-size: 30px;
+      color: black;
+      text-decoration: none;
+      margin: 5px 0px;
+      padding: 15px 6px 8px;
+      border-style: solid;
+      border-radius: 2px;
+      border-width: 2px;
+      border-color: #ff8000;
+      -webkit-transition-duration: 0.8s;
+      -o-transition-duration: 0.8s;
+      transition-duration: 0.8s; }
+    nav li a:hover {
+      color: #ff8000;
+      border-color: black;
+      background-color: black;
+      -webkit-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      transition-duration: 0.2s; }
+  nav:hover {
+    opacity: 1; }
+  a {
+    text-decoration: none; }
+  #home-back {
+    background-image: url(../img/blue-poly-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px; }
+  #name {
+    font-family: breakaway;
+    font-size: 50px;
+    color: black;
+    margin: 60px 0 0px;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: black;
+    background-image: url(../img/orange-poly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+  #web {
+    font-family: broken-glass;
+    font-size: 40px;
+    color: black;
+    width: 500px;
+    margin: 30px 17% 30px;
+    padding: 10px 0 5px;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: black;
+    background-image: url(../img/orange-poly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+  #graphic {
+    font-family: broken-glass;
+    font-size: 40px;
+    color: black;
+    width: 500px;
+    margin: 30px 17% 30px;
+    padding: 10px 0 5px;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: black;
+    background-image: url(../img/orange-poly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+  /* Title hover states */
+  #web:hover {
+    color: #ff8000;
+    background-color: black;
+    border-color: #ff8000;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    opacity: 1; }
+  #graphic:hover {
+    color: #ff8000;
+    background-color: black;
+    border-color: #ff8000;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    opacity: 1; }
+  /* End of title hover states */
+  #portrait-1 {
+    background-image: url(../img/me-mask-circ.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 10px 37% 10px; }
+  /* End of HOME section */
+  /* ABOUT section */
+  #about-back {
+    background-image: url(../img/blue-poly-2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    padding: 30px 0 0; }
+  #about {
+    font-family: breakaway;
+    font-size: 50px;
+    color: black;
+    margin: 0px;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: black;
+    background-image: url(../img/orange-poly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+  #about-1 {
+    font-family: josefinlight;
+    width: 500px;
+    margin: 0 16% 0;
+    background-image: url(../img/orange-poly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    padding: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 4px;
+    opacity: 0.8;
+    font-size: 20px;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+  #about-2 {
+    font-family: josefinlight;
+    width: 500px;
+    margin: 0 16% 0;
+    background-image: url(../img/orange-poly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    padding: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 4px;
+    opacity: 0.8;
+    font-size: 20px;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+  #about-3 {
+    font-family: josefinlight;
+    width: 500px;
+    margin: 0 16% 0;
+    background-image: url(../img/orange-poly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    padding: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 4px;
+    opacity: 0.8;
+    font-size: 20px;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+  /* Text hover states */
+  #about-1:hover {
+    color: #ff8000;
+    background-color: black;
+    border-color: #ff8000;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s; }
+  #about-2:hover {
+    color: #ff8000;
+    background-color: black;
+    border-color: #ff8000;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s; }
+  #about-3:hover {
+    color: #ff8000;
+    background-color: black;
+    border-color: #ff8000;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s; }
+  #portrait-2 {
+    background-image: url(../img/me-mask-circ-blue.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    margin: 50px 36%; }
+  /* End of ABOUT section */
+  /* CONTACT section */
+  #contact {
+    font-family: breakaway;
+    font-size: 50px;
+    color: black;
+    margin: 0 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: black;
+    background-image: url(../img/orange-poly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+  #contact-back {
+    background-image: url(../img/blue-poly-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 530px;
+    padding: 10px 0; }
+  #info-wrapper {
+    color: black;
+    background-image: url(../img/orange-poly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 3px;
+    margin: 20px 17% 20px;
+    width: 500px;
+    height: 480px;
+    float: left;
+    opacity: 0.8; }
+    #info-wrapper #contact-info {
+      text-align: center;
+      border-style: solid;
+      border-width: 3px;
+      border-radius: 3px;
+      width: 195px;
+      font-family: broken-glass;
+      font-size: 50px;
+      margin: 10px 27%;
+      padding: 10px 10px 5px;
+      -webkit-transition-duration: 0.5s;
+      -o-transition-duration: 0.5s;
+      transition-duration: 0.5s; }
+    #info-wrapper h3 {
+      border-style: solid;
+      border-width: 3px 0 3px 0;
+      border-radius: 3px;
+      font-family: broken-glass;
+      font-size: 35px;
+      margin: 10px;
+      padding: 10px 10px 5px;
+      -webkit-transition-duration: 0.5s;
+      -o-transition-duration: 0.5s;
+      transition-duration: 0.5s; }
+    #info-wrapper p {
+      font-family: josefinlight;
+      font-size: 30px;
+      margin: 10px 0;
+      text-align: center;
+      -webkit-transition-duration: 0.5s;
+      -o-transition-duration: 0.5s;
+      transition-duration: 0.5s; }
+  #info-wrapper:hover {
+    opacity: 1; }
+    #info-wrapper:hover h2 {
+      color: #ff8000;
+      background-color: black;
+      border-color: black;
+      -webkit-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s; }
+    #info-wrapper:hover h3 {
+      color: #ff8000;
+      background-color: black;
+      border-color: black;
+      -webkit-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s; }
+  /* End of CONTACT section */
+  /* WORK section */
+  #work {
+    font-family: breakaway;
+    font-size: 50px;
+    color: black;
+    margin: 0 0;
+    width: 100%;
+    height: 55px;
+    padding: 10px 0;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: black;
+    background-image: url(../img/orange-poly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+  #work-back {
+    background-image: url(../img/blue-poly-2.jpeg);
+    background-repeat: repeat;
+    padding: 10px 0; }
+  #bear {
+    background-image: url(../img/bear.png);
+    background-color: #ff8000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px 10px;
+    width: 320px;
+    height: 570px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 3px; }
+  #gun-girl {
+    background-image: url(../img/gun-girl.jpg);
+    background-color: #ff8000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: -590px 10px;
+    width: 416px;
+    height: 570px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 3px;
+    float: right; }
+  #eye {
+    background-image: url(../img/abstract-eye.png);
+    background-color: #ff8000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px 10px;
+    width: 315px;
+    height: 555px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 3px; }
+  #blue-me {
+    background-image: url(../img/blue-me.jpg);
+    background-color: #ff8000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: -575px 10px;
+    width: 415px;
+    height: 555px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 3px;
+    float: right; }
+  #bomb {
+    background-image: url(../img/bomb.png);
+    background-color: #ff8000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px 10px;
+    width: 750px;
+    height: 422px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 3px; }
+  #morty {
+    background-image: url(../img/evil-rick.png);
+    background-color: #ff8000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px 10px;
+    width: 415px;
+    height: 232.5px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 3px; }
+  #serpent {
+    background-image: url(../img/sea-serpent.jpg);
+    background-color: #ff8000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: -252.5px 10px;
+    width: 320px;
+    height: 232.5px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 3px;
+    float: right; }
+  #cyborg {
+    background-image: url(../img/cyborg.jpg);
+    background-color: #ff8000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px 10px;
+    width: 215px;
+    height: 295px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 3px; }
+  #logo {
+    background-image: url(../img/sykoskorpion-logo.png);
+    background-color: #ff8000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: -315px 10px;
+    width: 522px;
+    height: 295px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 3px;
+    float: right; }
+  #vid-wrapper iframe {
+    margin: 0 20%; }
+  #showreel, #mot-grap, #snd-des, #film-cuts {
+    background-color: #ff8000;
+    font-size: 25px;
+    font-family: broken-glass;
+    margin: 50px 0 10px;
+    padding: 10px 0;
+    text-align: center; } }
